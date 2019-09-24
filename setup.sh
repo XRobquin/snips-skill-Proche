@@ -2,6 +2,8 @@
 
 VENV=venv
 
+sudo git checkout .
+
 if [ ! -d "$VENV" ]
 then
 
