@@ -12,7 +12,9 @@ MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
 def intent_received(hermes, intent_message):
 	
-	sentence = "Je suis ravie"
+	sentence = "Je suis ravie "
+	name = intent_message.slots.Ami.first().value
+	sentence+= name
 	hermes.publish_end_session(intent_message.session_id, sentence)
 
 
