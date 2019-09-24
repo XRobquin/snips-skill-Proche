@@ -5,6 +5,7 @@ import datetime
 from pytz import timezone
 import random
 import pickle
+from class_ami import ami
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
