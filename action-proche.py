@@ -4,6 +4,8 @@ from hermes_python.hermes import Hermes
 import datetime
 from pytz import timezone
 import random
+from class_ami import ami
+import pickle
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
